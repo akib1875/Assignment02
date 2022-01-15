@@ -1,5 +1,6 @@
 /* fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 /* common styles or utilities */
 body{
@@ -105,11 +106,14 @@ hr{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
+    
 }
 .collection-item{
-    border: 30px solid white;
+    border: 15px solid white;
     background-color: rgba(247, 241, 232, 0.486);
     padding: 15px;
+    
+    
 }
 .item-details p{
     font-weight: 10;
@@ -149,20 +153,69 @@ hr{
     font-size: 35px;
 }
 
+/* ---------------------------------------------------------setup guide styles ----------------------------------------- */
+.setup-guides {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 25px;
+    background-color: rgba(220, 238, 238, 0.644);
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.setup{
+    padding-left: 15px;
+    border-left: 5px solid rgb(89, 89, 241);
+    border-radius: 15px;
+}
+.setup-video{
+    width: 80%;
+    height: 350px;
+    margin:15px;
+    padding-left: 50px; 
+}
+.setup-heading{
+text-align: center;
+color: black;
+font-family: 'Abril Fatface', cursive;
+}
+#pro{
+    color: orange;
+}
+
 /* -----------------------------------------------------------Media queries---------------------------------------------------  */
 /* mobile devices  */
 @media only screen and (max-width:688px){
-    /* .collection-div{
+    .half-width{
+        
+    }
+    .top-box{
         width: 100%;
-    } */
+        padding-left: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+    }
     .collection-items{
+        width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
     footer{
         width: 100%;
     }
     .main-camera{
-        margin-top: 200px;
+        margin-top: 500px;
+        margin-right: 50px;
+    }
+    .setup-guides{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header-section{
+        display: flex; justify-content: space-between;
+        margin-top: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+        flex-wrap: wrap;
     }
 
 }
@@ -175,6 +228,13 @@ hr{
     }
     .main-camera{
         margin-top: 200px;
+    }
+    .header-section{
+        display: flex; justify-content: space-between;
+        margin-top: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+        flex-wrap: wrap;
     }
 
     
