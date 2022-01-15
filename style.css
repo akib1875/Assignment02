@@ -19,22 +19,47 @@ body a{
 }
 
 
+/* Header Section  */
+
+.header-section{
+    display: flex; justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-right: 120px;
+    flex-wrap: wrap;
+}
+nav > ul{
+    display: flex;}
+    nav li{
+        list-style: none;
+        margin-right: 20px;
+        padding: 0px 10px;
+    }    
 
 /* Start Journey Styles */
+h1{
+    font-size: 52px;
+}
+.trans-camera:hover .main-camera{
+    transform: rotate(360deg) ;
+            transition: transform 2s ease-in-out;
+}
 .half-width{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
+    margin-bottom: 150px;
    
 }
 .main-camera{
     background-image: url(images/Circle\ design.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 414px;
-    width: 440px;
+    margin-top: 150px;
+
+    
 
 
 
@@ -107,11 +132,51 @@ hr{
     padding-bottom: 50px;
     
 }
-.footer h2,h3,p{
+.footer >div >h2{
     color: white;
     text-align: center;
 }
+.footer >div >h3{
+    color: white;
+    text-align: center;
+}
+.footer >div >p{
+    color: white;
+    text-align: center;
+}
+
 .footer p{
     font-size: 35px;
+}
+
+/* -----------------------------------------------------------Media queries---------------------------------------------------  */
+/* mobile devices  */
+@media only screen and (max-width:688px){
+    /* .collection-div{
+        width: 100%;
+    } */
+    .collection-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer{
+        width: 100%;
+    }
+    .main-camera{
+        margin-top: 200px;
+    }
+
+}
+
+
+/* Tablet devices  */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .collection-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-camera{
+        margin-top: 200px;
+    }
+
+    
 }
 
